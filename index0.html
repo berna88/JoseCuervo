@@ -1,69 +1,160 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="animate.css">
     <style>
-    .ima {
-    background-image: url(cuervo-mision.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 70%;
-    height: 18rem;
-    display: inline-block;
-    position: absolute;
-    left:0;
+#nosotros .imagen{
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 70%;
+      height: 18rem;
+      display: inline-block;
+#nosotros .image-left{
+      position: absolute;
+      left:0;
+    }
+#nosotros .image-right{
+      position: absolute;
+      right:0;
+    }
+#nosotros .content-right {
+        z-index: 1;
+        position: absolute;
+        top: 4rem;
+        right: 0;
+        border-right: solid 1px #cbb874;
+        border-top: solid 1px #cbb874;
+        padding: 1rem;
+        width: 70%;
+        height: auto !important;
+    }
+#nosotros .content-left {
+        z-index: 1;
+        position: absolute;
+        top: 4rem;
+        border-left: solid 1px #cbb874;
+        border-top: solid 1px #cbb874;
+        padding: 1rem;
+        width: 70%;
+        height: auto !important;
+    }
+
+#nosotros .bloque1{
+
 }
-.conten {
-    position: absolute;
-    top: 4rem;
-    right: 0;
-    border: solid 1px white;
-    padding: 1rem;
-    width: 70%;
-    height: auto;
+#nosotros .bloque2{
+
+}
+#nosotros .opacity{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  opacity: .5;
+  z-index: -1;
+  background: black;
 }
 
-@media only screen and (max-width: 768px) {
-  .ima {
+@media only screen and (max-width: 576px) {
+#nosotros .image-left {
     width: 90%;
-right: 0;
-margin: 5%;
+    right: 0;
+    margin: 5%;
+  }
+#nosotros .image-right {
+    width: 90%;
+    left: 0;
+    margin: 5%;
+  }
 
-}
-.conten {
+#nosotros .content-right {
   width: 90%;
-right: 0;
-margin: 5%;
+  right: 0;
+  margin: 5%;
+  }
+
+#nosotros .content-left {
+    width: 90%;
+    left: 0;
+    margin: 5%;
   }
 }
-    </style>
+</style>
   </head>
-  <body style="background:black;">
-    <section class="container">
+  <body style="background:black;color:white;">
+    <section id="nosotros" class="container">
       <article class="row">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-          <div class="ima">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 bloque1">
+          <div class="image-left imagen" style="background-image: url(cuervo-mision.jpg)">
           </div>
-          <div class="conten">
-            <p style="color:white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p style="color:white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div id="parrafo1" class="content-right">
+            <div class="opacity ">
+            </div>
+            <h1>Misión</h1>
+            <ul>
+              <li>Satisfacer como líderes las necesidades de clientes y consumidores de tequila en el mundo.</li>
+              <li>En México, posicionar nuestras marcas de bebidas en otros segmentos y categorías que incrementen el valor de la marca y de la empresa.</li>
+              <li>Aprovechar la ventaja competitiva de integración vertical desde el campo hasta el consumidor final.</li>
+            </ul>
           </div>
         </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 bloque2">
+          <div id="parrafo2" class="content-left">
+            <div class="opacity">
+            </div>
+            <p style="color:white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p style="color:white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
+          </div>
+          <div class="image-right imagen" style="background-image: url(cuervo-mision.jpg)">
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 bloque3">
+
+          <div class="image-left imagen" style="background-image: url(cuervo-mision.jpg)">
+
+          </div>
+          <div id="parrafo2" class="content-right">
+            <div class="opacity">
+            </div>
+            <p style="color:white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p style="color:white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+          </div>
+        </div>
       </article>
-      <article class="row">
-      <p style="color:white;">asdlkfj</p>
-
-      </article>
-
     </section>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script>
+var $win = $(window);
+$(document).ready(function() {
+  var p1 = $("#parrafo1").height($win.height());
+  var p2 = $("#parrafo2").height($win.height());
+  $(".bloque1").height(p1[0].offsetHeight+120);
+  $(".bloque2").height(p2[0].offsetHeight+120);
+  $win.on('resize',function(){
+      var p1 = $("#parrafo1").height($win.height());
+      var p2 = $("#parrafo2").height($win.height());
+      $(".bloque1").height(p1[0].offsetHeight+120);
+      $(".bloque2").height(p2[0].offsetHeight+120);
+      $('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', 'animate.css') );
+  });
+  });
+
+
+
+
+</script>
   </body>
 </html>
